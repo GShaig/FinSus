@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: django-finsus
+Version: 0.1
+Summary: A Django app to calculate personal financial sustainability.
+Home-page: https://www.example.com/
+Author: Shaig Gafarli
+Author-email: gafarlishaig@gmail.com
+License: BSD-3-Clause  # Example license
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0.3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.8
+
+=====
+FinSus
+=====
+
+Nowadays, people change their jobs and positions very often and usually take several months long brakes before they jump in to their next opportunity. Financial Sustainability App (FinSus) will take your savings and daily expenses as input, save into the database and calculate how many days you would survive in these conditions.
+
+Detailed documentation is in the "docs" directory.
+
+Quick start
+-----------
+
+1. Add "finsus" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'finsus',
+    ]
+
+2. Include the finsus URLconf in your project urls.py like this::
+
+    path('finsus/', include('finsus.urls')),
+
+3. Run ``python manage.py migrate`` to create the finsus models.
+
+4. Start the development server and visit http://127.0.0.1:8000/finsus/ to answer questions and see your result!
+
