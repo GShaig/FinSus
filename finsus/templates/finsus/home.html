@@ -1,0 +1,64 @@
+{% extends 'finsus/index.html' %}
+{% block title %} Financial Sustainability App {% endblock %}
+{% block content %}
+<h2>Please enter your expenses below:</h2>
+<form method="post" novalidate>
+    {% csrf_token %}
+    <div>
+        <p><b>How much is your total savings?</b></p>
+        {{ form.total_savings }}
+    </div>
+    <div>
+        <p><b>How much is your rent?</b></p>
+        {{ form.rent }}
+        {{ form.freq_rent }}
+    </div>
+    <div>
+        <p><b>How much is your electricity bill?</b></p>
+        {{ form.electricity }}
+        {{ form.freq_elec }}
+    </div>
+    <div>
+        <p><b>How much is your gas bill?</b></p>
+        {{ form.gas }}
+        {{ form.freq_gas }}
+    </div>
+    <div>
+        <p><b>How much is your water bill?</b></p>
+        {{ form.water }}
+        {{ form.freq_water }}
+    </div>
+    <div>
+        <p><b>How much is your internet bill?</b></p>
+        {{ form.internet }}
+        {{ form.freq_internet }}
+    </div>
+    <div>
+        <p><b>How much is your mobile service bill?</b></p>
+        {{ form.mobile }}
+        {{ form.freq_mobile }}
+    </div>
+    <div>
+        <p><b>How much is your transportation cost?</b></p>
+        {{ form.transport }}
+        {{ form.freq_transport }}
+    </div>
+    <div>
+        <p><b>How much do you spend on foods?</b></p>
+        {{ form.food }}
+        {{ form.freq_food }}
+    </div>
+    <div>
+        <p><b>How much do you spend on clothes?</b></p>
+        {{ form.clothes }}
+        {{ form.freq_clothes }}
+    </div>
+    <div>
+        <p><b>Total of other costs?</b></p>
+        {{ form.other }}
+        {{ form.freq_other }}
+    </div>
+<p></p>
+    <button type="submit">Submit!</button>
+</form>
+{% endblock %}
