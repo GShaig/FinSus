@@ -23,3 +23,5 @@ Quick start
 3. Run ``python manage.py migrate`` to create the finsus models.
 
 4. Start the development server and visit http://127.0.0.1:8000/finsus/ to answer questions and see your result!
+
+FinSus App is deployed on heroku.com. Please visit finsus.herokuapp.com
