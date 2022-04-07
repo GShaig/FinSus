@@ -4,8 +4,6 @@ FinSus
 
 Nowadays, people change their jobs and positions very often and usually take several months long brakes before they jump in to their next opportunity. Financial Sustainability App (FinSus) will take your savings and daily expenses as input, save into the database and calculate how many days you would survive in these conditions.
 
-Detailed documentation is in the "docs" directory.
-
 Quick start
 -----------
 
