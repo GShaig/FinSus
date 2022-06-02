@@ -6,6 +6,13 @@ FinSus is Financial Sustainability App built in Python by Shaig Gafarli.
 
 Nowadays, people change their jobs and positions very often and usually take several months long brakes before they jump in to their next opportunity. Financial Sustainability App (FinSus) will take your savings and daily expenses as input, save into the database and calculate how many days you would survive in these conditions.
 
+Used Python libraries: django-allauth, Whitenoise, Waitress
+
+Django framework was used to develop this application.
+Backend: Python/Django;
+Storage: Whitenoise;
+Frontend: HTML & CSS;
+
 Quick start
 -----------
 
